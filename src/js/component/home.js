@@ -8,13 +8,28 @@ export function Home() {
 		<div>
 			<MyNavBar />
 			<MainSection />
-			<h1>Hello World</h1>
-			<h2>hiiii</h2>
+
 			<div>
-				<MyCard Img="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg" />
-				<MyCard Img="https://hips.hearstapps.com/countryliving.cdnds.net/17/47/1511194376-cavachon-puppy-christmas.jpg" />
-				<MyCard />
-				<MyCard />
+				<MyCard
+					title="Medellin"
+					text="The city of eternal spring."
+					Img="https://recommend.com/wp-content/uploads/2017/07/Palacio-de-la-Cultura-%E2%80%93-Plaza-Botero.jpg"
+				/>
+				<MyCard
+					title="Pyramids of Giza"
+					text="The mystery is eternal"
+					Img="https://www.planetware.com/photos-large/EGY/egypt-cairo-pyramids-of-giza-and%20camels-2.jpg"
+				/>
+				<MyCard
+					title="Bangkok"
+					text="The land of a million smiles."
+					Img="https://www.fodors.com/wp-content/uploads/2019/04/HERO_BangkokTips_Hero_shutterstock_367503629.jpg"
+				/>
+				<MyCard
+					title="Cancun"
+					text="Beach,Sun and Fun"
+					Img="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2020%2F07%2F13%2Fcancun-mexico-coastline-CANCUNNOW0720.jpg"
+				/>
 			</div>
 		</div>
 	);

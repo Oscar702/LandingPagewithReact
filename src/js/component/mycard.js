@@ -7,13 +7,15 @@ export function MyCard(props) {
 		<Card style={{ width: "18rem", display: "inline-block" }}>
 			<Card.Img variant="top" src={props.Img} />
 			<Card.Body>
-				<Card.Title>4GEEKS Academy project</Card.Title>
-				<Card.Text />
+				<Card.Title>{props.title}</Card.Title>
+				<Card.Text>{props.text}</Card.Text>
 				<Button variant="primary">Go somewhere</Button>
 			</Card.Body>
 		</Card>
 	);
 }
 MyCard.propTypes = {
-	Img: PropTypes.string
+	Img: PropTypes.string,
+	title: PropTypes.string,
+	text: PropTypes.string
 };
