@@ -9,7 +9,9 @@ export function MyCard(props) {
 			<Card.Body>
 				<Card.Title>{props.title}</Card.Title>
 				<Card.Text>{props.text}</Card.Text>
-				<Button variant="primary">Go somewhere</Button>
+				<Button variant="primary" href={props.button}>
+					Learn More
+				</Button>
 			</Card.Body>
 		</Card>
 	);
@@ -17,5 +19,6 @@ export function MyCard(props) {
 MyCard.propTypes = {
 	Img: PropTypes.string,
 	title: PropTypes.string,
-	text: PropTypes.string
+	text: PropTypes.string,
+	button: PropTypes.string
 };

@@ -1,18 +1,22 @@
 import React from "react";
 import { Jumbotron, Button } from "react-bootstrap";
 import { MyCard } from "./mycard";
+import PropTypes from "prop-types";
+
 export function MainSection(props) {
 	return (
 		<Jumbotron>
-			<h1>Hello, world!</h1>
+			<h1>Bonjour Tout le Monde, Bonne Année</h1>
+			<p>This is my 4Geeks academy landing page project usin react js.</p>
 			<p>
-				This is a simple hero unit, a simple jumbotron-style component
-				for calling extra attention to featured content or information.
+				<Button variant="primary" href={props.button}>
+					Learn about Jumbotron
+				</Button>
 			</p>
-			<p>
-				<Button variant="primary">Learn more</Button>
-			</p>
-			<MyCard />
 		</Jumbotron>
 	);
 }
+
+MainSection.propTypes = {
+	button: PropTypes.string
+};
